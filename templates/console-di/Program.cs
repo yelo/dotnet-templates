@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace consoledi
 {
-    internal class App
+    internal class Program
     {
         private const int SecondsDelay = 10;
-        private readonly ILogger<App> _logger;
+        private readonly ILogger<Program> _logger;
         private readonly AppSettings _settings;
 
-        public App(ILogger<App> logger, IOptions<AppSettings> settings)
+        public Program(ILogger<Program> logger, IOptions<AppSettings> settings)
         {
             _logger = logger;
             _settings = settings.Value;

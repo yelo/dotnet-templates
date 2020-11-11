@@ -2,7 +2,6 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using System;
 using System.IO;
 using System.Threading.Tasks;
 
@@ -22,7 +21,7 @@ namespace consoledi
 
             // Create the service provider and run the application.
             var serviceProvider = services.BuildServiceProvider();
-            await serviceProvider.GetService<App>().Run().ConfigureAwait(false);
+            await serviceProvider.GetService<Program>().Run().ConfigureAwait(false);
         }
 
         /// <summary>
@@ -60,7 +59,8 @@ namespace consoledi
         /// <param name="services">Service collection to which we want to setup the services.</param>
         private static void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<App>();
+            // Add the entry/starting point.
+            services.AddTransient<Program>();
         }
     }
 }
