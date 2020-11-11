@@ -4,7 +4,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/yelo/dotnet-templates</RepositoryUrl>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.1</PackageVersion>
+    <PackageVersion>1.2</PackageVersion>
     <PackageId>Yelo.Templates.Console.DependencyInjection</PackageId>
     <Title>Console Application with Dependency Injection</Title>
     <Authors>Jimmy Kumpulainen</Authors>
